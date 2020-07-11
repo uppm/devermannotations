@@ -1,0 +1,13 @@
+{
+    "name": "devermannotations",
+    "version": "1.0",
+    "description": "",
+    "author": "",
+    "keywords": [
+        ""
+    ],
+    "modules": {
+        "phpdocannotations": "1.0"
+    },
+    "namespaces": {}
+}
