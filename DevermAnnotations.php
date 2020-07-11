@@ -29,7 +29,6 @@ class DevermAnnotations {
                     $this->router->{\strtolower($annotation->method)}($annotation->route, function(...$args) use ($method, $reflection) {
                         $method->invoke($reflection, $args);
                     });
-                    echo $annotation->route;
                 }
             }
         }
