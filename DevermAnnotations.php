@@ -27,7 +27,7 @@ class DevermAnnotations {
                 if ($parser->hasAnnotation(Route::class)) {
                     $annotation = $parser->getAnnotation(Route::class);
                     $this->router->{\strtolower($annotation->method)}($annotation->route, function(...$args) use ($method, $reflection) {
-                        $method->invoke($reflection, $args);
+                        return $method->invoke($reflection, $args);
                     });
                 }
             }
